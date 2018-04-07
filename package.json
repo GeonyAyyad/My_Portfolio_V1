@@ -19,6 +19,11 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "express": "^4.15.4"
+    "animate.css": "^3.6.1",
+    "express": "^4.15.4",
+    "radium": "^0.24.0",
+    "react-animations": "^1.0.0",
+    "react-bootstrap": "^0.32.1",
+    "react-burger-menu": "^2.4.1"
   }
 }
