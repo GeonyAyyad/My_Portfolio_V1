@@ -4,13 +4,17 @@ import { pushRotate as Menu } from 'react-burger-menu';
 import Logo from './components/Logo'
 import './App.css';
 import { Well, Button, Jumbotron, Col, SplitButton, MenuItem, Glyphicon, ButtonToolbar, ButtonGroup } from 'react-bootstrap';
-import { slideInLeft } from 'react-animations';
+import { slideInLeft, slideInRight } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
 
 const styles = {
   slideInLeft: {
-    animation: 'x 3s',
-    animationName: Radium.keyframes(slideInLeft, 'slideInLeft')
+    animation: 'x 1s',
+    animationName: Radium.keyframes(slideInLeft, 'slideInLeft'),
+  }
+  , slideInRight: {
+    animation: 'x 1.5s',
+    animationName: Radium.keyframes(slideInRight, 'slideInRight')
   }
 }
  
@@ -41,13 +45,21 @@ class App extends Component {
       <br />
       <Logo />
       <br />
+      <br />
+      
+  <a class="semi-transparent-button" href="/">Contact Me</a>
     </div>
     
     <div className="Introduction-section">
       <div className="container">
       <StyleRoot>
       <div className="test" style={styles.slideInLeft}>
-      <h1> Hi!</h1>
+      <h1> About Me</h1>
+      </div>
+      <div className="container">
+      <div className="test" style={styles.slideInRight}>
+      <p> Hi! My name is Geony Ayyad and I'm looking for a career change. </p>
+      </div>
       </div>
     </StyleRoot>
       </div>

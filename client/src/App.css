@@ -81,7 +81,22 @@ page-wrap {
 background-image: '../public/forest.jpg'
 }
 
-.container {
-  margin-left: 200px;
-  margin-right: 200px;
+
+
+.semi-transparent-button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px;
+  width: 90%;
+  max-width: 200px;
+  background: rgba( 0.5);
+  border-radius: 8px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
 }
